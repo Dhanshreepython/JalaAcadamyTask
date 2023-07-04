@@ -1,0 +1,57 @@
+<!-- 4. Use pseudo classes and elements into your webpage -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        a.highlight:hover {
+            color: #f10909;
+            font-size: 22px;
+        }
+
+        div {
+            background-color: green;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        div:hover {
+            background-color: rgb(108, 242, 204);
+        }
+        h5::first-letter {
+            color: #ff0000;
+            font-size: xx-large;
+        }
+        h5::first-line {
+            color: #8400ff;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Pseudo-classes</h2>
+
+    <p>When you hover over the first link below, it will change color and font size:</p>
+
+    <p><a class="highlight" href="css_syntax.asp">CSS Syntax</a></p>
+
+    <p><a href="default.asp" class="highlight">CSS Tutorial</a></p>
+
+    <p>Mouse over the div element below to change its background color:</p>
+
+    <div>Mouse Over Me</div>
+
+
+
+    <h2>Pseudo-Elements</h2>
+
+    <h5>You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</h5>
+
+
+
+</body>
+
+</html>

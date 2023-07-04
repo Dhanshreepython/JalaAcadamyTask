@@ -1,0 +1,78 @@
+<!-- 2. Use CSS animations (name,duration,iteration-count & delay) and paginations(Hoverable,with and without spaces). -->
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+    .div1{
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+        animation: mymove 3s;
+        animation-delay: 2s;
+        animation-duration:5s;
+        animation-iteration-count: 3;
+    }
+
+    @keyframes mymove {
+        from {top: 0px;}
+        to {top: 200px;}
+    } 
+    
+    .pagination {
+        display: inline-block;
+    }
+    .pagination1{
+        display: flex;
+    }
+      
+    .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+      
+    .pagination a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+    .pagination a:hover:not(.active) {background-color:green;}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<div class="div1"></div>
+
+<p> When an animation is finished, it goes back to its original style.</p>
+
+<h3>Hoverable Pagination</h3>
+<h3>with spaces</h3>
+
+<div class="pagination">
+    <a href="#">&laquo;</a>
+    <a href="#">1</a>
+    <a class="active" href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">&raquo;</a>
+</div>
+
+<h3>without spaces</h3>
+<div class="pagination1">
+    <a href="#">&laquo;</a>
+    <a href="#">1</a>
+    <a class="active" href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">&raquo;</a>
+</div>
+
+</body>
+</html>

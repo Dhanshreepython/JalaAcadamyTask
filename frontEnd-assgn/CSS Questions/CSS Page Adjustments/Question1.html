@@ -1,0 +1,75 @@
+<!-- 1. A page which specify a black border for table and if hover on it, page should change it's colour. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        table {
+            border-collapse: separate;
+            border-spacing: 2;
+        }
+        
+        td {
+            border: solid 1px black;
+            border-style: solid none;
+            padding: 10px;
+            border-bottom: 1;
+        }
+        
+        td:first-child {
+            border-left-style: solid;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        
+        td:last-child {
+            border-right-style: solid;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        
+        tr:last-child td {
+            border-bottom: solid 1px black;
+        }
+        
+        tr:hover td {
+            border: 2px solid #f020b8;
+            border-style: solid none;
+            padding: 10px;
+        }
+        
+        tr:hover td:first-child {
+            border-left-style: solid;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            color: blueviolet;
+        }
+        
+        tr:hover td:last-child {
+            border-right-style: solid;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+            color: darksalmon;
+        }
+    </style>
+
+    <table>
+        <tr>
+          <td>HTML</td><td>CSS</td><td>BOOTSRTAP</td>
+        </tr>
+        <tr>
+          <td>PYTHON</td><td>JAVA</td><td>JAVASCRIPT</td>
+        </tr>
+        <tr>
+          <td>DJNAGO</td><td>SPRING</td><td>ANGULAST.JS</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

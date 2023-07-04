@@ -1,0 +1,85 @@
+
+<!-- 2. Apply different visibility by an element (visibility: hidden, visible, collapse) and use different types of display for an element (display: none, inline, block, contents, list-item) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<style>
+.collapse {
+    visibility: collapse;
+  }
+  
+.hidden{
+    visibility:hidden;
+}
+
+.visible{
+  visibility:visible;
+}
+  table {
+    border: 1px solid red;
+    margin-left: auto;  
+    margin-right: auto;
+    width: 500px;  
+    height: 300px;
+    border-collapse: collapse;    
+
+  }
+  
+  td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    text-align: center;  
+  }
+  div{
+    text-align: center;
+    font-size: xx-large;
+  }
+
+  .td1{
+    display: inline;
+  }
+  .td2{
+    display:block;
+  }
+  .td3{
+    display:list-item;
+  }
+  .td4{
+    display: none;
+  }
+  .td5{
+    display:contents;
+  }
+</style>
+ 
+<div>Student Marks</div>
+<table>    
+<tr>  
+<th>First_Name</th>  
+<th>Last_Name</th>  
+<th>Subject</th>  
+<th>Marks</th>  
+</tr>    
+<tr>  
+<td class="collapse">Govind</td><td class="td5">yadav</td><td>Maths</td><td class="td4">92</td>  
+</tr>    
+<tr>  
+<td class="hidden">Madhav</td><td>kumar</td><td>Maths</td><td>89</td>  
+</tr>    
+<tr>  
+<td class="visible">Rani</td><td>Raghushi</td><td >Maths</td><td class="td3">82</td>  
+</tr>    
+
+<tr>  
+  <td class="visible td1">kashi</td><td class="">sharma</td><td class="">Maths</td><td class="td2">72</td>  
+  </tr>
+</table>    
+</body>  
+</html>     

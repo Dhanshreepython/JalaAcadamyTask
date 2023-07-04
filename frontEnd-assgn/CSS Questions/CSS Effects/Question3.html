@@ -1,0 +1,68 @@
+<!-- 3. Add positions to CSS block (static, relative, fixed, absolute and sticky). -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .div1{
+            position: relative;
+            border: 3px solid #73AD21;
+
+        }
+        .absolute{
+            position:absolute;
+            border: 3px solid red;
+            position: absolute;
+            top: 80px;
+            right: 0;
+            width: 200px;
+            height: 100px;
+        }
+
+        .fixed{
+            position:fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid #fc3333;
+        }
+
+        .static {
+            position: static;
+            border: 3px solid #73AD21;
+        }
+
+        .sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            padding: 5px;
+            background-color: #cae8ca;
+            border: 2px solid #4CAF50;
+        }
+
+    
+    </style>
+    <div class="div1">This is a relative positions
+        <div class="absolute">This is a absolute position</div>
+    </div>
+
+    <div class="fixed">
+        This div element has position:fixed;
+    </div>
+
+    <div class="static">
+        This div element has position:static;
+    </div>
+
+    <div class="sticky">
+        This div element has position:sticky;
+    </div>
+
+</body>
+</html>
